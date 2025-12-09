@@ -17,20 +17,8 @@ model = gm.nn.Gemma3_4B()
 params = gm.ckpts.load_params(gm.ckpts.CheckpointPath.GEMMA3_4B_IT)
 tokenizer = gm.text.Gemma3Tokenizer()
 
-# --- Placeholder Initialization (For code to run without real Gemma) ---
-# class DummyTokenizer:
-#     def __init__(self):
-#         self.special_tokens = type('SpecialTokens', (), {'EOS': 2})
-#         # Dummy encoding/decoding for demonstration
-#         self.encode = lambda text, add_bos=False: [2] + [10] * (len(text) // 5) if add_bos else [10] * (len(text) // 5)
-#         self.decode = lambda tokens: "22" if isinstance(tokens, jax.Array) and tokens.ndim == 1 else "22"
-#     def get_full_stop_id(self):
-#         # A plausible ID for '.' in a real tokenizer
-#         return 236761
 
-# tokenizer = DummyTokenizer()
-# --- END Placeholder ---
-
+#%%
 # Define the two distinct lists of numbers
 semantic_association: List[int] = [69, 420, 911, 666, 1776, 1337] # Added a few more for size
 regular_numbers: List[int] = [1, 5, 10, 100, 123, 1515] # Roughly equal size
@@ -46,30 +34,6 @@ EOS_ID = tokenizer.special_tokens.EOS
 # This relies on the tokenizer being able to encode '.'
 # FULL_STOP_ID = tokenizer.get_full_stop_id()
 FULL_STOP_ID = tokenizer.encode('.', add_bos=False)[0]
-
-
-# def generate_counting_examples(number: int, num_range: int) -> pd.DataFrame:
-#   """
-#   Generates a DataFrame of arithmetic strings and expected answers.
-#   """
-#   number_str = str(number)
-#   answers, strings = [], []
-#   current_sum = number
-#   current_string = number_str
-
-#   # Index 1 corresponds to one addition sign (2 operands)
-#   for _ in range(num_range):
-#     # The string generated is N + N + N + ...
-#     current_string = f"{current_string}+{number_str}"
-#     current_sum += number
-
-#     strings.append(current_string)
-#     answers.append(current_sum)
-
-#   df = pd.DataFrame({"String": strings, "Expected_Answer": answers})
-#   df.index = df.index + 1 # Start index at 1 (representing the number of '+' signs)
-#   df.index.name = "Num_Adds"
-#   return df
 
 
 def generate_counting_examples(number: int, num_range: int, step: int = 5) -> pd.DataFrame:
@@ -172,50 +136,50 @@ BASE_RNG_KEY = jax.random.key(42) # Fixed starting key for reproducibility
 
 print(f"Starting experiment with {len(ALL_NUMBERS)} numbers and up to {MAX_OPERANDS} additions.")
 
-for number in ALL_NUMBERS:
-    # 1. Generate the DataFrame for the current number
-    df_examples = generate_counting_examples(number, MAX_OPERANDS)
+# for number in ALL_NUMBERS:
+#     # 1. Generate the DataFrame for the current number
+#     df_examples = generate_counting_examples(number, MAX_OPERANDS)
 
-    # 2. Add columns for the experiment results
-    df_examples['Gemma_Answer_Str'] = ''
-    df_examples['Gemma_Answer_Int'] = pd.NA
-    df_examples['Is_Correct'] = False
+#     # 2. Add columns for the experiment results
+#     df_examples['Gemma_Answer_Str'] = ''
+#     df_examples['Gemma_Answer_Int'] = pd.NA
+#     df_examples['Is_Correct'] = False
 
-    print(f"\n--- Running: {number} ---")
+#     print(f"\n--- Running: {number} ---")
 
-    for index, row in df_examples.iterrows():
-        # Generate a new RNG key for each prompt
-        BASE_RNG_KEY, current_rng = jax.random.split(BASE_RNG_KEY)
+#     for index, row in df_examples.iterrows():
+#         # Generate a new RNG key for each prompt
+#         BASE_RNG_KEY, current_rng = jax.random.split(BASE_RNG_KEY)
 
-        # 3. Run the model generation
-        generated_answer_str = run_gemma_generation(
-            model, params, tokenizer, row['String'], current_rng
-        )
+#         # 3. Run the model generation
+#         generated_answer_str = run_gemma_generation(
+#             model, params, tokenizer, row['String'], current_rng
+#         )
 
-        # 4. Clean and validate the result
-        clean_answer = re.match(r'^\d+', generated_answer_str.strip())
+#         # 4. Clean and validate the result
+#         clean_answer = re.match(r'^\d+', generated_answer_str.strip())
 
-        if clean_answer:
-            gemma_answer_int = int(clean_answer.group(0))
-            is_correct = (gemma_answer_int == row['Expected_Answer'])
-        else:
-            gemma_answer_int = pd.NA
-            is_correct = False
+#         if clean_answer:
+#             gemma_answer_int = int(clean_answer.group(0))
+#             is_correct = (gemma_answer_int == row['Expected_Answer'])
+#         else:
+#             gemma_answer_int = pd.NA
+#             is_correct = False
 
-        # 5. Store results back into the DataFrame
-        df_examples.loc[index, 'Gemma_Answer_Str'] = generated_answer_str
-        df_examples.loc[index, 'Gemma_Answer_Int'] = gemma_answer_int
-        df_examples.loc[index, 'Is_Correct'] = is_correct
+#         # 5. Store results back into the DataFrame
+#         df_examples.loc[index, 'Gemma_Answer_Str'] = generated_answer_str
+#         df_examples.loc[index, 'Gemma_Answer_Int'] = gemma_answer_int
+#         df_examples.loc[index, 'Is_Correct'] = is_correct
 
-        # Print progress (optional)
-        print(f"L={index+1}: Expected={row['Expected_Answer']}, Predicted={generated_answer_str.strip()}, Correct={is_correct}")
-        # print(f"L={index+1}: Expected={row['Expected_Answer']}, Predicted={clean_answer}, Correct={is_correct}")
+#         # Print progress (optional)
+#         print(f"L={index+1}: Expected={row['Expected_Answer']}, Predicted={generated_answer_str.strip()}, Correct={is_correct}")
+#         # print(f"L={index+1}: Expected={row['Expected_Answer']}, Predicted={clean_answer}, Correct={is_correct}")
 
-    # 6. Save the DataFrame for the current number
-    df_examples.to_csv(f'exp1_results_{number}.csv')
-    FINAL_RESULTS.append(df_examples)
+#     # 6. Save the DataFrame for the current number
+#     df_examples.to_csv(f'exp1_results_{number}.csv')
+#     FINAL_RESULTS.append(df_examples)
 
-print("\nAll data collection complete. Results saved as CSV files.")
+# print("\nAll data collection complete. Results saved as CSV files.")
 
 
 #%% 📊 Plotting Normalized MSE vs. Sequence Length
@@ -253,8 +217,11 @@ for each_digit in set(digit_added):
     plot_data = plot_data.groupby('Num_Adds')['Normalized_MSE'].mean().reset_index()
 
     # print(f"Plot data for {each_digit}:", plot_data)
+    lstyle = '-' if each_digit in semantic_association else '-.'
+    mksize = 10 if each_digit in semantic_association else 2
+    marker = 'o' if each_digit in semantic_association else 's'
 
-    plt.plot(plot_data['Num_Adds'], plot_data['Normalized_MSE']+1e-16, marker='o', linestyle='-', label=f'{each_digit}')
+    plt.plot(plot_data['Num_Adds'], plot_data['Normalized_MSE']+1e-16, marker=marker, markersize=mksize, linestyle=lstyle, label=f'{each_digit}')
 
 plt.legend()
 plt.title('Normalized MSE vs. Sequence Length')
@@ -265,3 +232,5 @@ plt.yscale('log') # Use log scale for Y-axis to better visualize large errors
 plt.tight_layout()
 plt.draw();
 plt.savefig('exp1_normalized_mses.png')
+
+# %%

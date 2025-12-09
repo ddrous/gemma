@@ -1,0 +1,1234 @@
+Tue Dec  9 01:34:17 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.105.08             Driver Version: 580.105.08     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4080        On  |   00000000:01:00.0 Off |                  N/A |
+|  0%   45C    P8             10W /  320W |      92MiB /  16376MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2573      G   /usr/lib/xorg/Xorg                       56MiB |
+|    0   N/A  N/A            2753      G   /usr/bin/gnome-shell                      8MiB |
++-----------------------------------------------------------------------------------------+
+W1209 01:34:20.004873  539835 cuda_executor.cc:1802] GPU interconnect information not available: INTERNAL: NVML doesn't support extracting fabric info or NVLink is not used by the device.
+W1209 01:34:20.008297  539699 cuda_executor.cc:1802] GPU interconnect information not available: INTERNAL: NVML doesn't support extracting fabric info or NVLink is not used by the device.
+2025-12-09 01:34:20.022919: W external/local_xla/xla/tsl/platform/cloud/google_auth_provider.cc:185] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "NOT_FOUND: Could not locate the credentials file.". Retrieving token from GCE failed with "FAILED_PRECONDITION: Error executing an HTTP request: libcurl code 6 meaning 'Could not resolve hostname', error details: Could not resolve host: metadata.google.internal".
+WARNING:absl:Provided metadata contains unknown key custom. Adding it to custom_metadata.
+E1209 01:34:21.333143  539885 google_auth_provider.cc:188] Could not find the credentials file in the standard gcloud location [/home/gb21553/.config/gcloud/application_default_credentials.json]. You may specify a credentials file using $GOOGLE_APPLICATION_CREDENTIALS, or to use Google application default credentials, run: gcloud auth application-default login
+Starting experiment with 14 numbers and up to 100 additions.
+
+--- Running: 69 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=138, Predicted=138, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=483, Predicted=441, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=828, Predicted=700, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=1173, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=1518, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=1863, Predicted=1, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=2208, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=2553, Predicted=1435, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=2898, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=3243, Predicted=1500, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=3588, Predicted=1780, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=3933, Predicted=1780, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=4278, Predicted=1890, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=4623, Predicted=1680, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=4968, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=5313, Predicted=1380, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=5658, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=6003, Predicted=1470, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=6348, Predicted=1230, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=6693, Predicted=1380, Correct=False
+
+--- Running: 420 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=840, Predicted=840, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=2940, Predicted=420, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=5040, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=7140, Predicted=16720, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=9240, Predicted=21000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=11340, Predicted=21120, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=13440, Predicted=21600, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=15540, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=17640, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=19740, Predicted=21000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=21840, Predicted=21000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=23940, Predicted=2000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=26040, Predicted=21000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=28140, Predicted=21000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=30240, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=32340, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=34440, Predicted=21000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=36540, Predicted=21000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=38640, Predicted=2100, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=40740, Predicted=21200, Correct=False
+
+--- Running: 911 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=1822, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=6377, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=10932, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=15487, Predicted=17220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=20042, Predicted=22120, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=24597, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=29152, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=33707, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=38262, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=42817, Predicted=45660, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=47372, Predicted=2022, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=51927, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=56482, Predicted=23182, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=61037, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=65592, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=70147, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=74702, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=79257, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=83812, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=88367, Predicted=, Correct=False
+
+--- Running: 666 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=1332, Predicted=1332, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=4662, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=7992, Predicted=13320, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=11322, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=14652, Predicted=28766, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=17982, Predicted=25200, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=21312, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=24642, Predicted=29970, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=27972, Predicted=2000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=31302, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=34632, Predicted=26640, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=37962, Predicted=4000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=41292, Predicted=20000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=44622, Predicted=26640, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=47952, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=51282, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=54612, Predicted=26660, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=57942, Predicted=3330, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=61272, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=64602, Predicted=, Correct=False
+
+--- Running: 1776 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=3552, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=12432, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=21312, Predicted=1776, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=30192, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=39072, Predicted=1776, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=47952, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=56832, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=65712, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=74592, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=83472, Predicted=24000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=92352, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=101232, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=110112, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=118992, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=127872, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=136752, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=145632, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=154512, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=163392, Predicted=21872, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=172272, Predicted=, Correct=False
+
+--- Running: 1337 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=2674, Predicted=2674, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=9359, Predicted=7000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=16044, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=22729, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=29414, Predicted=25770, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=36099, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=42784, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=49469, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=56154, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=62839, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=69524, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=76209, Predicted=26740, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=82894, Predicted=166464, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=89579, Predicted=26740, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=96264, Predicted=60000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=102949, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=109634, Predicted=1337, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=116319, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=123004, Predicted=1337, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=129689, Predicted=1337, Correct=False
+
+--- Running: 1 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=2, Predicted=2, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=7, Predicted=7, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=12, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=17, Predicted=? ?, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=22, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=27, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=32, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=37, Predicted=150, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=42, Predicted=121, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=47, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=52, Predicted=130, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=57, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=62, Predicted=225, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=67, Predicted=141, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=72, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=77, Predicted=212, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=82, Predicted=66, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=87, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=92, Predicted=284, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=97, Predicted=, Correct=False
+
+--- Running: 2 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=4, Predicted=4, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=14, Predicted=21, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=24, Predicted=12, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=34, Predicted=110, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=44, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=54, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=64, Predicted=200, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=74, Predicted=2, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=84, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=94, Predicted=226, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=104, Predicted=220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=114, Predicted=220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=124, Predicted=240, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=134, Predicted=220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=144, Predicted=220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=154, Predicted=226, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=164, Predicted=225, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=174, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=184, Predicted=220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=194, Predicted=280, Correct=False
+
+--- Running: 5 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=10, Predicted=10, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=35, Predicted=42, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=60, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=85, Predicted=100, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=110, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=135, Predicted=? ?, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=160, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=185, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=210, Predicted=260, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=235, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=260, Predicted=155, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=285, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]W1209 02:15:13.017887  539699 cuda_command_buffer.cc:769] Retry CUDA graph instantiation after OOM error
+E1209 02:15:13.024421  539699 pjrt_stream_executor_client.cc:2085] Execution of replica 0 failed: RESOURCE_EXHAUSTED: Underlying backend ran out of memory trying to instantiate command buffer with 788 (total of 43 alive graphs in the process). You can try to (a) Give more memory to the driver by reducing XLA_CLIENT_MEM_FRACTION (b) Disable command buffers with 'XLA_FLAGS=--xla_gpu_enable_command_buffer=' (empty set). Original error: Failed to instantiate CUDA graph: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+
+L=62: Expected=310, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=335, Predicted=180, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=360, Predicted=310, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=385, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=410, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=435, Predicted=260, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=460, Predicted=310, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=485, Predicted=310, Correct=False
+
+--- Running: 10 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=20, Predicted=20, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=70, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=120, Predicted=120, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=170, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=220, Predicted=220, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=270, Predicted=220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=320, Predicted=220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=370, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=420, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=470, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=520, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=570, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=620, Predicted=220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=670, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=720, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=770, Predicted=220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=820, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=870, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=920, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=970, Predicted=220, Correct=False
+
+--- Running: 11 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=22, Predicted=22, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=77, Predicted=77, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=132, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=187, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=242, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=297, Predicted=234, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=352, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=407, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=462, Predicted=234, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=517, Predicted=340, Correct=False
+Traceback (most recent call last):
+  File "/home/gb21553/Projects/Gemma/semal-exp/exp_1.py", line 190, in <module>
+    generated_answer_str = run_gemma_generation(
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/gb21553/Projects/Gemma/semal-exp/exp_1.py", line 125, in run_gemma_generation
+    out = model.apply(
+          ^^^^^^^^^^^^
+  File "/home/gb21553/miniconda3/envs/gemma/lib/python3.12/site-packages/kauldron/utils/train_property.py", line 141, in decorated
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+ValueError: RESOURCE_EXHAUSTED: Underlying backend ran out of memory trying to instantiate command buffer with 788 (total of 43 alive graphs in the process). You can try to (a) Give more memory to the driver by reducing XLA_CLIENT_MEM_FRACTION (b) Disable command buffers with 'XLA_FLAGS=--xla_gpu_enable_command_buffer=' (empty set). Original error: Failed to instantiate CUDA graph: CUDA_ERROR_OUT_OF_MEMORY: out of memory
+--------------------
+For simplicity, JAX has removed its internal frames from the traceback of the following exception. Set JAX_TRACEBACK_FILTERING=off to include these.
+Tue Dec  9 02:50:45 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.105.08             Driver Version: 580.105.08     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4080        On  |   00000000:01:00.0 Off |                  N/A |
+|  0%   37C    P8              9W /  320W |      92MiB /  16376MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            2573      G   /usr/lib/xorg/Xorg                       56MiB |
+|    0   N/A  N/A            2753      G   /usr/bin/gnome-shell                      8MiB |
++-----------------------------------------------------------------------------------------+
+W1209 02:50:48.909855  637264 cuda_executor.cc:1802] GPU interconnect information not available: INTERNAL: NVML doesn't support extracting fabric info or NVLink is not used by the device.
+W1209 02:50:48.914195  637126 cuda_executor.cc:1802] GPU interconnect information not available: INTERNAL: NVML doesn't support extracting fabric info or NVLink is not used by the device.
+2025-12-09 02:50:48.926857: W external/local_xla/xla/tsl/platform/cloud/google_auth_provider.cc:185] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "NOT_FOUND: Could not locate the credentials file.". Retrieving token from GCE failed with "FAILED_PRECONDITION: Error executing an HTTP request: libcurl code 6 meaning 'Could not resolve hostname', error details: Could not resolve host: metadata.google.internal".
+WARNING:absl:Provided metadata contains unknown key custom. Adding it to custom_metadata.
+E1209 02:50:51.067671  637352 google_auth_provider.cc:188] Could not find the credentials file in the standard gcloud location [/home/gb21553/.config/gcloud/application_default_credentials.json]. You may specify a credentials file using $GOOGLE_APPLICATION_CREDENTIALS, or to use Google application default credentials, run: gcloud auth application-default login
+Starting experiment with 6 numbers and up to 100 additions.
+
+--- Running: 1 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=2, Predicted=2, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=7, Predicted=7, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=12, Predicted=___ ___, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=17, Predicted=17, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=22, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=27, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=32, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=37, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=42, Predicted=66, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=47, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=52, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=57, Predicted=134, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=62, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=67, Predicted=162, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=72, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=77, Predicted=211, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=82, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=87, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=92, Predicted=225, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=97, Predicted=210, Correct=False
+
+--- Running: 5 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=10, Predicted=? ?, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=35, Predicted=42, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=60, Predicted=66, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=85, Predicted=160, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=110, Predicted=310, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=135, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=160, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=185, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=210, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=235, Predicted=250, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=260, Predicted=160, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=285, Predicted=200, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=310, Predicted=250, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=335, Predicted=245, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=360, Predicted=310, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=385, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=410, Predicted=275, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=435, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=460, Predicted=310, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=485, Predicted=310, Correct=False
+
+--- Running: 10 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=20, Predicted=20, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=70, Predicted=70, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=120, Predicted=120, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=170, Predicted=180, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=220, Predicted=220, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=270, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=320, Predicted=220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=370, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=420, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=470, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=520, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=570, Predicted=220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=620, Predicted=220, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=670, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=720, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=770, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=820, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=870, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=920, Predicted=210, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=970, Predicted=, Correct=False
+
+--- Running: 100 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=200, Predicted=200, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=700, Predicted=700, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=1200, Predicted=1200, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=1700, Predicted=1600, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=2200, Predicted=2100, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=2700, Predicted=2120, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=3200, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=3700, Predicted=2100, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=4200, Predicted=1000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=4700, Predicted=1000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=5200, Predicted=1000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=5700, Predicted=10100, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=6200, Predicted=1000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=6700, Predicted=1000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=7200, Predicted=1200, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=7700, Predicted=1000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=8200, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=8700, Predicted=1000, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=9200, Predicted=700, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=9700, Predicted=, Correct=False
+
+--- Running: 123 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=246, Predicted=246, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=861, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=1476, Predicted=123, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=2091, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=2706, Predicted=123, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=3321, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=3936, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=4551, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=5166, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=5781, Predicted=2460, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=6396, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=7011, Predicted=2286, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=7626, Predicted=2346, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=8241, Predicted=2460, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=8856, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=9471, Predicted=2466, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=10086, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=10701, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=11316, Predicted=2466, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=11931, Predicted=2466, Correct=False
+
+--- Running: 1515 ---
+
+[STOP CONDITION MET: Non-digit token found]
+L=2: Expected=3030, Predicted=3030, Correct=True
+
+[STOP CONDITION MET: Non-digit token found]
+L=7: Expected=10605, Predicted=8065, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=12: Expected=18180, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=17: Expected=25755, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=22: Expected=33330, Predicted=1515, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=27: Expected=40905, Predicted=1515, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=32: Expected=48480, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=37: Expected=56055, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=42: Expected=63630, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=47: Expected=71205, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=52: Expected=78780, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=57: Expected=86355, Predicted=1515, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=62: Expected=93930, Predicted=1515, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=67: Expected=101505, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=72: Expected=109080, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=77: Expected=116655, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=82: Expected=124230, Predicted=1515, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=87: Expected=131805, Predicted=, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=92: Expected=139380, Predicted=1515, Correct=False
+
+[STOP CONDITION MET: Non-digit token found]
+L=97: Expected=146955, Predicted=1061650, Correct=False
+
+All data collection complete. Results saved as CSV files.
+All results: [                                                     String  ...  Is_Correct
+Num_Adds                                                     ...            
+1                                                       1+1  ...        True
+6                                             1+1+1+1+1+1+1  ...        True
+11                                  1+1+1+1+1+1+1+1+1+1+1+1  ...       False
+16                        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1  ...        True
+21              1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1  ...       False
+26        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+31        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+36        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+41        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+46        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+51        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+56        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+61        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+66        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+71        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+76        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+81        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+86        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+91        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+96        1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+...  ...       False
+
+[20 rows x 5 columns],                                                      String  ...  Is_Correct
+Num_Adds                                                     ...            
+1                                                       5+5  ...       False
+6                                             5+5+5+5+5+5+5  ...       False
+11                                  5+5+5+5+5+5+5+5+5+5+5+5  ...       False
+16                        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5  ...       False
+21              5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5  ...       False
+26        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+31        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+36        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+41        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+46        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+51        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+56        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+61        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+66        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+71        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+76        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+81        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+86        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+91        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+96        5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+...  ...       False
+
+[20 rows x 5 columns],                                                      String  ...  Is_Correct
+Num_Adds                                                     ...            
+1                                                     10+10  ...        True
+6                                      10+10+10+10+10+10+10  ...        True
+11                      10+10+10+10+10+10+10+10+10+10+10+10  ...        True
+16        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+21        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...        True
+26        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+31        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+36        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+41        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+46        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+51        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+56        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+61        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+66        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+71        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+76        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+81        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+86        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+91        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+96        10+10+10+10+10+10+10+10+10+10+10+10+10+10+10+1...  ...       False
+
+[20 rows x 5 columns],                                                      String  ...  Is_Correct
+Num_Adds                                                     ...            
+1                                                   100+100  ...        True
+6                               100+100+100+100+100+100+100  ...        True
+11          100+100+100+100+100+100+100+100+100+100+100+100  ...        True
+16        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+21        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+26        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+31        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+36        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+41        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+46        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+51        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+56        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+61        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+66        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+71        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+76        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+81        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+86        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+91        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+96        100+100+100+100+100+100+100+100+100+100+100+10...  ...       False
+
+[20 rows x 5 columns],                                                      String  ...  Is_Correct
+Num_Adds                                                     ...            
+1                                                   123+123  ...        True
+6                               123+123+123+123+123+123+123  ...       False
+11          123+123+123+123+123+123+123+123+123+123+123+123  ...       False
+16        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+21        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+26        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+31        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+36        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+41        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+46        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+51        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+56        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+61        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+66        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+71        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+76        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+81        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+86        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+91        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+96        123+123+123+123+123+123+123+123+123+123+123+12...  ...       False
+
+[20 rows x 5 columns],                                                      String  ...  Is_Correct
+Num_Adds                                                     ...            
+1                                                 1515+1515  ...        True
+6                        1515+1515+1515+1515+1515+1515+1515  ...       False
+11        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+16        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+21        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+26        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+31        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+36        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+41        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+46        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+51        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+56        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+61        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+66        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+71        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+76        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+81        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+86        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+91        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+96        1515+1515+1515+1515+1515+1515+1515+1515+1515+1...  ...       False
+
+[20 rows x 5 columns]]
